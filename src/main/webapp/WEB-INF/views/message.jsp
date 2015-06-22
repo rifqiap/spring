@@ -84,8 +84,8 @@
 			<td>${message.id}</td>
 			<td>${message.name}</td>
 			<td>${message.messages}</td>
-			<td><a href="<c:url value='/edit/${message.id}' />" >Edit</a></td>
-			<td><a href="<c:url value='/remove/${message.id}' />" >Delete</a></td>
+			<td><a href="<c:url value='message/edit/${message.id}' />" >Edit</a></td>
+			<td><a href="<c:url value='message/remove/${message.id}' />" >Delete</a></td>
 		</tr>
 	</c:forEach>
 	</table>
