@@ -59,6 +59,12 @@
 	<beans:bean id="personService" class="com.os.spring.service.PersonServiceImpl">
 		<beans:property name="personDAO" ref="personDAO"></beans:property>
 	</beans:bean>
+        <beans:bean id="messageDAO" class="com.os.spring.dao.MessageDAOImpl">
+		<beans:property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="messageService" class="com.os.spring.service.MessageServiceImpl">
+		<beans:property name="messageDAO" ref="messageDAO"></beans:property>
+	</beans:bean>
 	<context:component-scan base-package="com.os.spring" />
 	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
