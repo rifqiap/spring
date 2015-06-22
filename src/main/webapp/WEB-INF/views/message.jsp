@@ -75,7 +75,7 @@
 	<tr>
 		<th width="80">Message ID</th>
 		<th width="120">Message Name</th>
-		<th width="120">Message Messages</th>
+		<th width="120">Message</th>
 		<th width="60">Edit</th>
 		<th width="60">Delete</th>
 	</tr>
