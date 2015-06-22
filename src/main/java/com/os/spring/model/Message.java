@@ -18,7 +18,7 @@ public class Message {
 	
 	private String name;
 	
-	private String message;
+	private String messages;
 
 	public int getId() {
 		return id;
@@ -36,16 +36,16 @@ public class Message {
 		this.name = name;
 	}
 
-	public String getMessage() {
-		return message;
+	public String getMessages() {
+		return messages;
 	}
 
-	public void setMessage(String country) {
-		this.message = message;
+	public void setMessages(String messages) {
+		this.messages = messages;
 	}
 	
 	@Override
 	public String toString(){
-		return "id="+id+", name="+name+", country="+message;
+		return "id="+id+", name="+name+", messages="+messages;
 	}
 }

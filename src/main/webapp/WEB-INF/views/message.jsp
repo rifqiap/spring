@@ -46,12 +46,12 @@
 	</tr>
 	<tr>
 		<td>
-			<form:label path="message">
-				<spring:message text="Message"/>
+			<form:label path="messages">
+				<spring:message text="Messages"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="message" />
+			<form:input path="messages" />
 		</td>
 	</tr>
 	<tr>
@@ -75,7 +75,7 @@
 	<tr>
 		<th width="80">Message ID</th>
 		<th width="120">Message Name</th>
-		<th width="120">Message Message</th>
+		<th width="120">Message Messages</th>
 		<th width="60">Edit</th>
 		<th width="60">Delete</th>
 	</tr>
@@ -83,7 +83,7 @@
 		<tr>
 			<td>${message.id}</td>
 			<td>${message.name}</td>
-			<td>${message.message}</td>
+			<td>${message.messages}</td>
 			<td><a href="<c:url value='/edit/${message.id}' />" >Edit</a></td>
 			<td><a href="<c:url value='/remove/${message.id}' />" >Delete</a></td>
 		</tr>
