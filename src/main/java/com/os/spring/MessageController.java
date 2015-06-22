@@ -46,14 +46,14 @@ public class MessageController {
 		
 	}
 	
-	@RequestMapping("/remove/{id}")
+	@RequestMapping("/message/remove/{id}")
     public String removeMessage(@PathVariable("id") int id){
 		
         this.messageService.removeMessage(id);
         return "redirect:/messages";
     }
  
-    @RequestMapping("/edit/{id}")
+    @RequestMapping("/message/edit/{id}")
     public String editMessage(@PathVariable("id") int id, Model model){
         model.addAttribute("message", this.messageService.getMessageById(id));
         model.addAttribute("listMessages", this.messageService.listMessages());
